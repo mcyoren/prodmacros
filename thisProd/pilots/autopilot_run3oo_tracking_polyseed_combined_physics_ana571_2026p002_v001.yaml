@@ -10,18 +10,18 @@ sphnxprod03:
   PROD_COMBINED_run3oo:
     config: run3oo_tracking_polyseed_combined_physics_ana571_2026p002_v001.yaml
 #    runlist: /sphenix/u/sphnxpro/Production2026/run3oo_tracking_ana571_2026p002_v001/thisProd/runlist
-    runlist: /sphenix/u/sphnxpro/Production2026/run3oo_tracking_ana564_2026p001_v001/thisProd/trimmed_runlist_run3oo.list
+    runlist: /sphenix/u/sphnxpro/Production2026/run3oo_tracking_polyseed_combined_physics_ana571_2026p002_v001/thisProd/run3oo_daqdb.txt
     jobprio: 60
     submit: on
     dstspider: on
 
-  # Combined polyseeding
-  PROD_TRKR_POLYSEED_COMBINED_run3oo:
-    config: run3oo_tracking_polyseed_combined_physics_ana571_2026p002_v001.yaml
-#    runlist: /sphenix/u/sphnxpro/Production2026/run3oo_tracking_ana571_2026p002_v001/thisProd/runlist
-    runlist: /sphenix/u/sphnxpro/Production2026/run3oo_tracking_ana564_2026p001_v001/thisProd/trimmed_runlist_run3oo.list
-    jobprio: 30
-    submit: off
-    dstspider: on
+#   # Combined polyseeding
+#   PROD_TRKR_POLYSEED_COMBINED_run3oo:
+#     config: run3oo_tracking_polyseed_combined_physics_ana571_2026p002_v001.yaml
+# #    runlist: /sphenix/u/sphnxpro/Production2026/run3oo_tracking_ana571_2026p002_v001/thisProd/runlist
+#     runlist: /sphenix/u/sphnxpro/Production2026/run3oo_tracking_ana564_2026p001_v001/thisProd/trimmed_runlist_run3oo.list
+#     jobprio: 30
+#     submit: off
+#     dstspider: off
 
 ###############################################################################
