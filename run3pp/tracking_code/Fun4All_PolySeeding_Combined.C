@@ -237,8 +237,6 @@ void Fun4All_PolySeeding_Combined(
   se->registerSubsystem(garfield);
 
   se->registerSubsystem(new Tpc_ModuleTrackReco());     // makes TPC_MODULETRACKS
- 
-  se->registerSubsystem(new Tpc_ModuleTrackReco());     // makes TPC_MODULETRACKS
   se->registerSubsystem(new Tpc_AssembledTrackReco());  // makes TPC_ASSEMBLEDTRACKS
 
   auto *crossingFinder = new TpcCrossingFinder();
