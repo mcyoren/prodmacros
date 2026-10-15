@@ -106,8 +106,8 @@ R__LOAD_LIBRARY(libTrackingDiagnostics.so)
 
 void Fun4All_PolySeeding_Combined(
     const int nEvents = 10,
-    const std::string &inputfile = "DST_STREAMING_EVENT_combined_run3pp_ana561_2025p013_v001-00081612-00000.root",
-    const std::string &outfilename = "DST_TRACKSEEDS_run3pp_ana561_2025p013_v001-00081612-00000.root",
+    const std::string &inputfile = "DST_COMBINED_run3pp_ana571_2026p002_v001-00079513-00000.root",
+    const std::string &outfilename = "DST_TRACKSEEDS_run3pp_ana571_2026p002_v001-00079513-00000.root",
     const std::string &dbtag = "newcdbtag")
 {
   Fun4AllMemoryHistograms::instance()->Enable();
