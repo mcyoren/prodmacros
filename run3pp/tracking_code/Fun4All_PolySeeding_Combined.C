@@ -53,7 +53,7 @@
 #include <fun4all/SubsysReco.h>
 
 #include <phool/recoConsts.h>
-
+#include <phgarfield/PHGarfield.h>
 #include <tpcconditions/TpcConditionsReco.h>
 
 #include <tpctrackreco/TpcCrossingFinder.h>
@@ -231,7 +231,12 @@ void Fun4All_PolySeeding_Combined(
 
   //==============================================================
   se->registerSubsystem(new TpcConditionsReco());
+  // Shared drift model for the crossing finder and the polyclusterizer;
+  // must be registered after TpcConditionsReco and before the polyseeding modules.
+  auto *garfield = new PHGarfield();
+  se->registerSubsystem(garfield);
 
+  se->registerSubsystem(new Tpc_ModuleTrackReco());     // makes TPC_MODULETRACKS
  
   se->registerSubsystem(new Tpc_ModuleTrackReco());     // makes TPC_MODULETRACKS
   se->registerSubsystem(new Tpc_AssembledTrackReco());  // makes TPC_ASSEMBLEDTRACKS
